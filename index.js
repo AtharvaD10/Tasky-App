@@ -32,10 +32,11 @@ const loadInitialCardData = () =>{
     cards.map((cardObject) =>{
       taskContainer.insertAdjacentHTML("beforeend" , generateNewCard(cardObject))
 
+      //update our globalstore
     globalStore.push(cardObject);
     })
 
-  //update our globalstore
+  
     
 };
 
